@@ -5,7 +5,7 @@ const hacker2 = prompt("Type the navigator's name: ");
 
 function name(name1, name2) {
   console.log(`The driver's name is ${name1}.`);
-  console.log(`The driver's name is ${name2}.`);
+  console.log(`The navigator's name is ${name2}.`);
 }
 
 name(hacker1, hacker2);
@@ -52,7 +52,7 @@ function changeName(name1, name2) {
   for (let i = 0; i < driver.length; i++) {
     newDriver += driver[i].toUpperCase() + " ";
   }
-  console.log(newDriver);
+  console.log(newDriver.trimEnd());
 
   for (let i = navigator.length - 1; i >= 0; i--) {
     newNavigator += navigator[i];
