@@ -63,4 +63,16 @@ changeName(hacker1, hacker2);
 
 // Iteration 3.1
 
-function orderName(name1, name2) {}
+function orderName(name1, name2) {
+  let driverFirstLetter = name1.substr(0, 1);
+  let navigatorFirstLetter = name2.substr(0, 1);
+
+  if (driverFirstLetter < navigatorFirstLetter) {
+    console.log("The driver's name goes first");
+  } else if (navigatorFirstLetter < driverFirstLetter) {
+    console.log("Yo, the navigator goes first definitely.");
+  } else {
+    console.log("What?! You both have the same name?");
+  }
+}
+orderName(hacker1, hacker2);
