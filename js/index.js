@@ -42,3 +42,25 @@ function longestName(name1, name2) {
 longestName(hacker1, hacker2);
 
 // Iteration 3: Loops
+
+function changeName(name1, name2) {
+  const driver = name1;
+  const navigator = name2;
+  let newDriver = "";
+  let newNavigator = "";
+
+  for (let i = 0; i < driver.length; i++) {
+    newDriver += driver[i].toUpperCase() + " ";
+  }
+  console.log(newDriver);
+
+  for (let i = navigator.length - 1; i >= 0; i--) {
+    newNavigator += navigator[i];
+  }
+  console.log(newNavigator);
+}
+changeName(hacker1, hacker2);
+
+// Iteration 3.1
+
+function orderName(name1, name2) {}
